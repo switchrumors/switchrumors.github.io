@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>SwitchRumors</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,26 +21,38 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
+          <img src="img/SW_logotype_light@2x.png" class="masthead-brand" width="200"/>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active" href="http://newsletter.switchrumors.com">View the latest newsletter</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <h1 class="cover-heading">Nintendo Switch news sent to your inbox.</h1>
+        <p class="lead">Receive the latest Nintendo Switch news, rumors, and game releases once a week.</p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+                      <form action="http://newsletter.switchrumors.com/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank" class="mx-auto">
+          <div id="revue-embed" class="row mt-5">
+
+            <div class="col-md-8 form-group revue-form-group">
+              <!-- <label for="member_email">Email address</label> -->
+              <input class="form-control revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+            </div>
+            <div class="col-md-4 form-group revue-form-actions">
+              <input type="submit" value="Subscribe" name="member[subscribe]" class="btn btn-danger" id="member_submit">
+            </div>
+
+          </div></form>
+        </p>
+        <p class="lead">
+          <a href="http://newsletter.switchrumors.com" class="viewnews">View the latest newsletter</a>
         </p>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>Copyright 2018, SwitchRumors. Made by <a href="http://azntaiji.com">Zach Taiji</a></p>
         </div>
       </footer>
     </div>
